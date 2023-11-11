@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            position: relative;
+            overflow: auto;
+        }
+
+        #title{
+            width: auto;
+            background-color: rgb(128, 128, 128);
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="warpper">
+        <div id="title">
+            <h1>&nbsp;HTML Forms&nbsp;</h1>
+        </div>
+        <div id="main">
+            <form action="form_ok.jsp" method="post">
+                <fieldset style="width:max-content;margin:10px">
+                    <legend>기본 정보 입력</legend>
+                    <label for="username">이름 : </label>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="gender">성별 : </label>
+                    <input type="text" id="gender" name="gender"><br>
+                    <label for="birth">생일 : </label>
+                    <input type="text" id="birth" name="birth"><br>
+                    <label for="tall">신장(cm) : </label>
+                    <input type="text" id="tall" name="tall"><br>
+                    <label for="weight">몸무게(kg) : </label>
+                    <input type="text" id="weight" name="weight"><br>
+                </fieldset> <br>
+                <fieldset style="width:max-content;margin:10px">
+                    <legend>학생 정보</legend>
+                    <label for="studentID">학번 : </label>
+                    <input type="text" id="studentID" name="studentID"><br>
+                    <label for="department">학부 : </label>
+                    <input type="text" id="department" name="department"><br>
+                    <label for="rc">소속 RC : </label>
+                    <input type="text" id="rc" name="rc">
+                </fieldset><br>
+                <fieldset style="width:max-content;margin:10px">
+                    <legend>기타 정보</legend>
+                    <label for="wakeup">학기 중에 주로 일어나는 시간 : </label><br>
+                    <input type="text" id="wakeup" name="wakeup"><br><br>
+                    <label for="tmi">TMI 3가지!</label><br>
+                    <textarea id="tmi" name="tmi" cols="40" rows="6"></textarea>
+                </fieldset><br>
+                <input type="submit" value="제출">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
